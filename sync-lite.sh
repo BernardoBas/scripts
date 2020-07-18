@@ -12,16 +12,11 @@ repo sync --force-sync -j32
 source build/envsetup.sh
 source scripts/repopick.sh
 
-sed -i 's/LINEAGE_BUILDTYPE := UNOFFICIAL/LINEAGE_BUILDTYPE := nightly/g' vendor/lineage/config/common.mk
-# sed -i 's/screenBrightnessDim">1/screenBrightnessDim">6/g' device/lge/msm8996-common/overlay/frameworks/base/core/res/res/values/config.xml
-# sed -i 's/screenBrightnessDoze">2/screenBrightnessDoze">17/g' device/lge/msm8996-common/overlay/frameworks/base/core/res/res/values/config.xml
-
-# git clone https://github.com/BernardoBas/bootanimation.git
-cd bootanimation/
-git pull
-cd ../
-rm vendor/lineage/bootanimation/bootanimation.tar && rm vendor/lineage/bootanimation/desc.txt
-cp bootanimation/bootanimation.tar vendor/lineage/bootanimation/ && cp bootanimation/desc.txt vendor/lineage/bootanimation/
+cd vendor/lineage/
+# git remote add customizations https://github.com/BernardoBas/android_vendor_lineage.git
+git fetch customizations
+git cherry-pick 5bc16b3a988865cd8ce94d433fa8b5c51842a191 9bf0707c3f60042c4833fd83cec6c5ac1da9cbc3
+cd ../../
 
 cd frameworks/base/
 # git remote add fixes https://github.com/BernardoBas/android_frameworks_base.git
