@@ -27,19 +27,19 @@ cd ../../
 cd device/lge/h870/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h870.git
 git fetch fingerprint
-git cherry-pick d8c91efb1b7359f42c6aaa6aa8e3a274a064dd7c
+git cherry-pick d8c91efb1b7359f42c6aaa6aa8e3a274a064dd7c 5b5b2b8aaf167e6ccfc13573ecd27cb9ac5662a3
 cd ../../../
 
 cd device/lge/h872/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h872.git
 git fetch fingerprint
-git cherry-pick 197c25f7c0d87092f7cee70b70f3c5c5c88538c3
+git cherry-pick 197c25f7c0d87092f7cee70b70f3c5c5c88538c3 4c9f1e7311de29f5154309aeee6e58c2599d685e
 cd ../../../
 
 cd device/lge/us997/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_us997.git
 git fetch fingerprint
-git cherry-pick 7608922b20fbe18c424702172f64eef6054e7102
+git cherry-pick 7608922b20fbe18c424702172f64eef6054e7102 a5068f7dee20e64848ac6d42250437978804e020
 cd ../../../
 
 notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png

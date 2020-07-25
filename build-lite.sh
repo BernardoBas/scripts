@@ -7,10 +7,10 @@ rm -rf packages/apps/DeskClock/
 rm -rf packages/apps/Dialer/
 # rm -rf packages/apps/DocumentsUI/
 rm -rf packages/apps/Eleven/
-# rm -rf packages/apps/Email/
+rm -rf packages/apps/Email/
 rm -rf packages/apps/Etar/
 rm -rf packages/apps/ExactCalculator/
-# rm -rf packages/apps/Exchange/
+rm -rf packages/apps/Exchange/
 rm -rf packages/apps/Gallery2/
 rm -rf packages/apps/Jelly/
 rm -rf packages/apps/Messaging/
