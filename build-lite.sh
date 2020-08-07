@@ -16,8 +16,8 @@ rm -rf packages/apps/Jelly/
 rm -rf packages/apps/Messaging/
 rm -rf packages/apps/Snap/
 rm -rf packages/apps/Updater/
-# make clean
-rm -rf out/target/product/h872/
+make clean
+# rm -rf out/target/product/h872/
 # brunch lineage_h872-eng
 brunch h872
 # notify-send Android "Building process finished" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
