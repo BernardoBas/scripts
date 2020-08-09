@@ -1,6 +1,6 @@
 #!/bin/bash
 source scripts/sync-lite.sh
-rm -rf packages/apps/AudioFX
+rm -rf packages/apps/AudioFX/
 rm -rf packages/apps/Camera2/
 rm -rf packages/apps/Contacts/
 rm -rf packages/apps/DeskClock/
