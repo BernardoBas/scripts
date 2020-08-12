@@ -5,6 +5,7 @@ rm -rf device/lge/msm8996-common/
 rm -rf kernel/lge/msm8996/
 rm -rf frameworks/base/
 rm -rf device/lge/h870/
+rm -rf device/lge/h870ds/
 rm -rf device/lge/h872/
 rm -rf device/lge/us997/
 
