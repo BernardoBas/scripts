@@ -43,4 +43,10 @@ git fetch fingerprint
 git cherry-pick 7608922b20fbe18c424702172f64eef6054e7102 a5068f7dee20e64848ac6d42250437978804e020 ff0344212c680185cdbb44d46d279065cca8a857
 cd ../../../
 
+cd device/lge/msm8996-common/
+# git remote add brightness https://github.com/BernardoBas/android_device_lge_msm8996-common.git
+git fetch brightness
+git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
+cd ../../../
+
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
