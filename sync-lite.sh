@@ -1,6 +1,7 @@
 #!/bin/bash
 
-rm -rf vendor/lineage
+rm -rf vendor/lineage/
+rm -rf vendor/lge/
 rm -rf device/lge/msm8996-common/
 rm -rf kernel/lge/msm8996/
 rm -rf frameworks/base/
@@ -47,6 +48,15 @@ cd device/lge/msm8996-common/
 # git remote add brightness https://github.com/BernardoBas/android_device_lge_msm8996-common.git
 git fetch brightness
 git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
+# USE OLD AUDIO BLOBS
+# git cherry-pick 99b446a55af42fd300d70f05b04bb9b0958d98f1
 cd ../../../
+
+# USE OLD AUDIO BLOBS
+# cd vendor/lge/
+# git remote add audio https://github.com/BernardoBas/proprietary_vendor_lge.git
+# git fetch audio
+# git cherry-pick 68aae46edf5f58a3be7469e7fc2e2e4dfcfed3f5
+# cd ../../
 
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
