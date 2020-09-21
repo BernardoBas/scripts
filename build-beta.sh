@@ -22,9 +22,9 @@ rm -rf out/target/product/h870ds/
 rm -rf out/target/product/h872/
 rm -rf out/target/product/us997/
 # brunch lineage_h872-eng
+# brunch h870
+# brunch h870ds
 brunch h872
-brunch h870
-brunch h870ds
-brunch us997
+# brunch us997
 # notify-send Android "Building process finished" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
-source scripts/upload-lite.sh
+source scripts/upload-beta.sh

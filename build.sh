@@ -1,7 +1,6 @@
 #!/bin/bash
 source scripts/sync.sh
 make clean
-rm -rf packages/apps/AudioFX/
 rm -rf packages/apps/Updater/
 brunch h872
 brunch h870
