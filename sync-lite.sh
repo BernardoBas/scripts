@@ -61,6 +61,8 @@ cd device/lge/msm8996-common/
 # git remote add brightness https://github.com/BernardoBas/android_device_lge_msm8996-common.git
 git fetch brightness
 git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
+# ROUNDED CORNERS
+git cherry-pick 5c490db56b5d2431bc21a35f865511a3ea86ca4a
 cd ../../../
 
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
