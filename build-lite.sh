@@ -16,11 +16,11 @@ rm -rf packages/apps/Messaging/
 rm -rf packages/apps/Recorder/
 rm -rf packages/apps/Snap/
 rm -rf packages/apps/Updater/
-# make clean
-rm -rf out/target/product/h870/
-rm -rf out/target/product/h870ds/
-rm -rf out/target/product/h872/
-rm -rf out/target/product/us997/
+make clean
+# rm -rf out/target/product/h870/
+# rm -rf out/target/product/h870ds/
+# rm -rf out/target/product/h872/
+# rm -rf out/target/product/us997/
 # brunch lineage_h872-eng
 brunch h872
 brunch h870

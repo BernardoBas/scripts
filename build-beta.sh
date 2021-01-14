@@ -1,5 +1,5 @@
 #!/bin/bash
-source scripts/sync-lite.sh
+# source scripts/sync-lite.sh
 rm -rf packages/apps/AudioFX/
 rm -rf packages/apps/Camera2/
 rm -rf packages/apps/Contacts/
@@ -17,14 +17,14 @@ rm -rf packages/apps/Recorder/
 rm -rf packages/apps/Snap/
 rm -rf packages/apps/Updater/
 # make clean
-rm -rf out/target/product/h870/
-rm -rf out/target/product/h870ds/
-rm -rf out/target/product/h872/
-rm -rf out/target/product/us997/
+# rm -rf out/target/product/h870/
+# rm -rf out/target/product/h870ds/
+# rm -rf out/target/product/h872/
+# rm -rf out/target/product/us997/
 # brunch lineage_h872-eng
-# brunch h870
+brunch h870
 # brunch h870ds
-brunch h872
+# brunch h872
 # brunch us997
 # notify-send Android "Building process finished" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
 source scripts/upload-beta.sh

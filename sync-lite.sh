@@ -10,7 +10,7 @@ rm -rf device/lge/h870ds/
 rm -rf device/lge/h872/
 rm -rf device/lge/us997/
 
-repo sync --force-sync -j32
+repo sync --force-sync -j32 -q
 source build/envsetup.sh
 source scripts/repopick.sh
 
@@ -36,7 +36,7 @@ git fetch fingerprint
 # MISSING DEPENDENCIES
 git cherry-pick 8d5acaa7181b47827613f57f82c8ad0e3c78ef8c
 # BUILD FINGERPRINT
-git cherry-pick 049d4d9ca7009a88eab88e26a34d146f8eb3438c
+git cherry-pick 5aa98a2fa0ee28168f4151409327a6139fb653a0
 cd ../../../
 
 cd device/lge/h872/
@@ -45,7 +45,7 @@ git fetch fingerprint
 # MISSING DEPENDENCIES
 git cherry-pick 813ef7017839b10a2678ee414bbe791900aa0c16
 # BUILD FINGERPRINT
-git cherry-pick bc82ebec5caaef9fbf4689d5de1717b40085afdb
+git cherry-pick 96505a8604a902c6563d6e7633849b94662f49a9
 cd ../../../
 
 cd device/lge/us997/
@@ -54,7 +54,7 @@ git fetch fingerprint
 # MISSING DEPENDENCIES
 git cherry-pick 7d348c0004014ea52f777cf8ab2a25114c830605
 # BUILD FINGERPRINT
-git cherry-pick 003f074e6472f59f780e93973d617fc4ee7c470d
+git cherry-pick 7d3662dc4c2e9c79b24a5d4e5970c5698b1c5135
 cd ../../../
 
 cd device/lge/msm8996-common/
@@ -63,6 +63,8 @@ git fetch brightness
 git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
 # ROUNDED CORNERS
 git cherry-pick 5c490db56b5d2431bc21a35f865511a3ea86ca4a
+# MIC LEVEL
+git cherry-pick 9123565f56262e73dc6d613a0efc4bfb5867f5e6
 cd ../../../
 
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
