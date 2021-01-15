@@ -17,6 +17,7 @@ rm -rf packages/apps/Recorder/
 rm -rf packages/apps/Snap/
 rm -rf packages/apps/Updater/
 make clean
+export ALLOW_MISSING_DEPENDENCIES=true
 # rm -rf out/target/product/h870/
 # rm -rf out/target/product/h870ds/
 # rm -rf out/target/product/h872/

@@ -2,9 +2,9 @@
 
 rm -rf vendor/lineage/
 rm -rf vendor/lge/
-rm -rf device/lge/msm8996-common/
-rm -rf kernel/lge/msm8996/
 rm -rf frameworks/base/
+rm -rf kernel/lge/msm8996/
+rm -rf device/lge/msm8996-common/
 rm -rf device/lge/h870/
 rm -rf device/lge/h870ds/
 rm -rf device/lge/h872/
@@ -21,50 +21,38 @@ git fetch customizations
 git cherry-pick 5bc16b3a988865cd8ce94d433fa8b5c51842a191 9bf0707c3f60042c4833fd83cec6c5ac1da9cbc3
 cd ../../
 
-cd frameworks/base/
-# git remote add fixes https://github.com/BernardoBas/android_frameworks_base.git
-git fetch fixes
-# CAM FIXES
-git cherry-pick a904a84ad485d8768c7a523ec380696d573c9a9e 5a02ae0abfb2a341055aecbb46fb6ce3b24070cf
-# TWILIGHT
-git cherry-pick 2c9baf509fef40586cc07a8b3aed91bb3cc741b3
-cd ../../
-
 cd device/lge/h870/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h870.git
 git fetch fingerprint
-# MISSING DEPENDENCIES
-git cherry-pick 8d5acaa7181b47827613f57f82c8ad0e3c78ef8c
 # BUILD FINGERPRINT
-git cherry-pick 5aa98a2fa0ee28168f4151409327a6139fb653a0
+git cherry-pick 2ab1d63493f68235dc8c65929f5be63dbd884d76
 cd ../../../
 
 cd device/lge/h872/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h872.git
 git fetch fingerprint
-# MISSING DEPENDENCIES
-git cherry-pick 813ef7017839b10a2678ee414bbe791900aa0c16
 # BUILD FINGERPRINT
-git cherry-pick 96505a8604a902c6563d6e7633849b94662f49a9
+git cherry-pick fbbddc255e02956918cdd03430b8bf065a9f9821
 cd ../../../
 
 cd device/lge/us997/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_us997.git
 git fetch fingerprint
-# MISSING DEPENDENCIES
-git cherry-pick 7d348c0004014ea52f777cf8ab2a25114c830605
 # BUILD FINGERPRINT
-git cherry-pick 7d3662dc4c2e9c79b24a5d4e5970c5698b1c5135
+git cherry-pick 6db634cd1ed8265fa4a71411e8b3ddf8e427bf9b
 cd ../../../
 
-cd device/lge/msm8996-common/
+cd frameworks/base/
+# git remote add camera https://github.com/BernardoBas/android_frameworks_base.git
+git fetch camera
+# CAM FIXES
+git cherry-pick ae63d669a09fd6aa329c52f12915b34a8d372d68 382163573c199308ebc8d3706e4b9405a3455d05
+cd ../../
+
+# cd device/lge/msm8996-common/
 # git remote add brightness https://github.com/BernardoBas/android_device_lge_msm8996-common.git
-git fetch brightness
-git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
-# ROUNDED CORNERS
-git cherry-pick 5c490db56b5d2431bc21a35f865511a3ea86ca4a
-# MIC LEVEL
-git cherry-pick 9123565f56262e73dc6d613a0efc4bfb5867f5e6
-cd ../../../
+# git fetch brightness
+# git cherry-pick 182167280f089d6cd4f29707b36bbb37f20f5ee9
+# cd ../../../
 
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
