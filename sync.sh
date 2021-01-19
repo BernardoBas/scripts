@@ -2,7 +2,7 @@
 
 rm -rf vendor/lineage
 
-repo sync --force-sync -j32
+repo sync --force-sync -j32 -q
 source build/envsetup.sh
 source scripts/repopick.sh
 
