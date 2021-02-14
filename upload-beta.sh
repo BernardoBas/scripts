@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# cd /mnt/backup/android/builds/lineage/us997/
-# rm *.*
-# cd /mnt/backup/android/los18/out/target/product/us997/
-# mv *.zip *.md5sum /mnt/backup/android/builds/lineage/us997/
-# cd /mnt/backup/android/builds/lineage/us997/
-# rm lineage_us997-ota*.zip *.md5sum
-# sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/Beta/ <<< $'put *.*'
+cd /mnt/backup/android/builds/lineage/us997/
+rm *.*
+cd /mnt/backup/android/los18/out/target/product/us997/
+mv *.zip *.md5sum /mnt/backup/android/builds/lineage/us997/
+cd /mnt/backup/android/builds/lineage/us997/
+rm lineage_us997-ota*.zip *.md5sum
+sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/Beta/ <<< $'put *.*'
 
 cd /mnt/backup/android/builds/lineage/h872/
 rm *.*

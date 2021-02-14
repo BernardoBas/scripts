@@ -25,21 +25,21 @@ cd device/lge/h870/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h870.git
 git fetch fingerprint
 # BUILD FINGERPRINT
-git cherry-pick 2ab1d63493f68235dc8c65929f5be63dbd884d76
+git cherry-pick 09100a51eac9ef6321f48ce20e4bc4e80bd0fcb9
 cd ../../../
 
 cd device/lge/h872/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_h872.git
 git fetch fingerprint
 # BUILD FINGERPRINT
-git cherry-pick fbbddc255e02956918cdd03430b8bf065a9f9821
+git cherry-pick a318e00ab71d56f2a556958608c6dba7aa561fe1
 cd ../../../
 
 cd device/lge/us997/
 # git remote add fingerprint https://github.com/BernardoBas/android_device_lge_us997.git
 git fetch fingerprint
 # BUILD FINGERPRINT
-git cherry-pick 6db634cd1ed8265fa4a71411e8b3ddf8e427bf9b
+git cherry-pick 3bee4435e83a30b4abc7decd8fc0a1987ac2081a
 cd ../../../
 
 cd frameworks/base/

@@ -16,13 +16,13 @@ cd /mnt/backup/android/builds/lineage/h872/
 rm lineage_h872-ota*.zip *.md5sum
 sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/Nightlies/H872/ <<< $'put *.*'
 
-cd /mnt/backup/android/builds/lineage/h870ds/
-rm *.*
-cd /mnt/backup/android/los18/out/target/product/h870ds/
-mv *.zip *.md5sum /mnt/backup/android/builds/lineage/h870ds/
-cd /mnt/backup/android/builds/lineage/h870ds/
-rm lineage_h870ds-ota*.zip *.md5sum
-sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/Nightlies/H870DS/ <<< $'put *.*'
+# cd /mnt/backup/android/builds/lineage/h870ds/
+# rm *.*
+# cd /mnt/backup/android/los18/out/target/product/h870ds/
+# mv *.zip *.md5sum /mnt/backup/android/builds/lineage/h870ds/
+# cd /mnt/backup/android/builds/lineage/h870ds/
+# rm lineage_h870ds-ota*.zip *.md5sum
+# sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/Nightlies/H870DS/ <<< $'put *.*'
 
 cd /mnt/backup/android/builds/lineage/h870/
 rm *.*
