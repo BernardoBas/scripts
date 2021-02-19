@@ -42,4 +42,6 @@ git fetch camera
 git cherry-pick ae63d669a09fd6aa329c52f12915b34a8d372d68 382163573c199308ebc8d3706e4b9405a3455d05
 cd ../../
 
+rm -rf packages/apps/Updater/
+
 # notify-send Android "Source code updated" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
