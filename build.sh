@@ -1,6 +1,5 @@
 #!/bin/bash
 source scripts/sync.sh
-rm -rf packages/apps/Updater/
 make clean
 # brunch lineage_h830-eng
 brunch h830
